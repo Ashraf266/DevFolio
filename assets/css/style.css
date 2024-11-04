@@ -1,0 +1,172 @@
+body{
+    background-color: #f5f5f5;
+}
+
+header {
+    background-image:  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1{
+    font-size: 4.5rem;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.navbar-brand{
+    font-size: 28px;
+}
+
+.nav-item{
+    --bs-nav-link-hover-color: white;
+}
+
+.nav-item a{
+    color: white;
+}
+
+.nav-item::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0%;
+    margin-left: 8px;
+    margin-top: -5px;
+    background-color: white;
+    transition: width 0.2s linear;
+}
+
+.nav-item:hover::after {
+    width: 60%;
+}
+
+.active-link::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 60%;
+    margin-left: 8px;
+    margin-top: -5px;
+    background-color: white;
+}
+
+.dropdown-item{
+    transition: color 0.2s linear;
+}
+
+.dropdown-item:hover{
+    background-color: white;
+    color: rgb(10, 92, 207) !important;
+}
+
+.progress{
+    height: 0.7rem;
+}
+
+.numbers-section{
+    padding: 8rem;
+    background-image: linear-gradient(rgba(0,120,255,0.8), rgba(0,120,255,0.8)), url(../images/counters-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.slider-section{
+    padding-block: 8rem;
+    background-image: linear-gradient(rgba(0,120,255,0.7), rgba(0,120,255,0.7)), url(../images/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.small-avatar{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.glow{
+    transition: all 0.5s;
+}
+
+.glow:hover{
+    color: rgb(0,120,255) !important;
+}
+
+footer{
+    padding-top: 8rem;
+    background-image: linear-gradient(rgba(0,120,255,0.7), rgba(0,120,255,0.7)), url(../images/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.title-a {
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.line-mf {
+    width: 40px;
+    height: 5px;
+    background-color: #0078ff;
+    margin: 0 auto;
+}
+
+.title-left:before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: #0078ff;
+    width: 100px;
+    bottom: -12px;
+}
+
+.icon-circle {
+    height: 60px;
+    width: 60px;
+    line-height: 1.5;
+    box-shadow: 0 0 0 10px #cde1f8;
+}
+
+.icon-circle-2 {
+    height: 60px;
+    width: 60px;
+    line-height: 1.5;
+    box-shadow: 0 0 0 10px #0078ff;
+    transition: all 0.6s;
+}
+
+.iconcard:has(.icon-circle-2):hover .icon-circle-2{
+    box-shadow: 0 0 0 10px #cde1f8;
+    background-color: #0078ff;
+    color:white;
+}
+
+.post-card img{
+    transition: all 0.6s;
+}
+
+.post-card:hover img{
+    transform: scale(1.3);
+}
+
+.portofolio-icon{
+    color: #0078ff;
+    padding: 10px;
+    font-size: 1rem;
+    border: 3px solid #0078ff;
+    border-radius: 50%;
+}
